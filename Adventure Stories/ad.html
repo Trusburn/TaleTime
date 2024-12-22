@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Stories</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .story {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      animation: float 4s infinite ease-in-out;
+      transition: transform 0.3s;
+    }
+
+    .story:hover {
+      transform: scale(1.05);
+    }
+
+    .story img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .story-name {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .story-name a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .story-name a:hover {
+      color: #ffcc00;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Adventure Stories</h1>
+    <div class="story-grid">
+      <div class="story">
+        <img src="images/The Lost Forest2.webp" alt="Story 1">
+        <div class="story-name">
+          <a href="The lost forest.html">The Lost Forest</a>
+        </div>
+      </div>
+      <div class="story">
+        <img src="images/the hidden cavearn.webp" alt="Story 3">
+        <div class="story-name">
+          <a href="the hiden caverns.html">The hiden caverns</a>
+        </div>
+      </div>
+      <div class="story">
+        <img src="images/The Guardian of the Silver Sands.webp" alt="Story 3">
+        <div class="story-name">
+          <a href="The Guardian of the Silver Sands.html">The Guardian of the Silver Sands</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/lost and found.jpg" alt="Story 3">
+        <div class="story-name">
+          <a href="Lost and found.html">Lost And Found</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/souls in sky.webp" alt="Story 3">
+        <div class="story-name">
+          <a href="Souls in the sky.html">Souls In The Sky</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/the latern.jpeg" alt="Story 3">
+        <div class="story-name">
+          <a href="The latern.html">The Lantern of Kaamos</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/The First Gingerbread Man.webp" alt="Story 3">
+        <div class="story-name">
+          <a href="the first gingerbreadman.html">The First Gingerbread Man</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/The Tiger's Claws.webp" alt="Story 3">
+        <div class="story-name">
+          <a href="tiger claws.html">The Tiger's Claws</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/sandwitch.webp" alt="Story 3">
+        <div class="story-name">
+          <a href="The infinite sandwich.html">The infinite sandwich</a>
+        </div>
+      </div>
+
+      <div class="story">
+        <img src="images/Genesis of Nirvana.jpeg" alt="Story 3">
+        <div class="story-name">
+          <a href="Genesis of Nirvana.html">Genesis of Nirvana</a>
+        </div>
+      </div>
+      <!-- Add more story cards as needed -->
+    </div>
+  </div>
+</body>
+</html>

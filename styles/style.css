@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(255, 0, 179), rgb(0, 55, 255));
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .gallery-container {
+    display: grid;
+    gap: 90px; /* Space between items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    padding: 1px;
+    max-width: 1000px; /* Center and limit width */
+    margin-left: 120px;
+    margin-top: 150px;
+    animation: float 2.5s ease-in-out infinite;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    
+  }
+  
+  .gallery-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .gallery-item p {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+
+  #teddy-text {
+    animation: fadeinout 3s infinite, shake 0.9s infinite;
+    font-size: 20px;
+  }
+
+  teddy img {
+    animation: fadeinout 3s infinite, shake 0.9s infinite;
+  }
+
+  @keyframes fadeinout {
+    0%, 100% { opacity: 0; } /* Fully transparent at the start and end */
+    50% { opacity: 1; }      /* Fully visible at the midpoint */
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); } /* No movement at the start and end */
+    25% { transform: translateX(-5px); }  /* Shift left */
+    50% { transform: translateX(5px); }   /* Shift right */
+    75% { transform: translateX(-5px); }  /* Shift left again */
+  }
+  
+
+  @keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+  
+  @media screen and (max-width: 768px) {
+    .gallery-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+      justify-content: center; /* Center items in the container */
+      margin: 40px;
+    }
+  }
+  
+  .gallery-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .gallery-item p {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+  #teddy img {
+    width: 100px;
+    height: 90px;
+    margin-left: 185px;
+  }
+
+  #teddy-text {
+    text-align: center;
+  }
+
+  #textmarguee {
+    text-align: center;
+  }
